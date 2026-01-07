@@ -1,4 +1,4 @@
-# Animal APP
+# AnimalAPP
 
 Random pictures of dogs or cats.
 
