@@ -56,5 +56,5 @@ if __name__ == "__main__":
         idioma = idiomas["ingles"]
     
 
-    app.run(debug=True)
+    app.run(host="0.0.0.0")
 
