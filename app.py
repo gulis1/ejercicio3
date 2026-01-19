@@ -24,7 +24,8 @@ def index():
         response = requests.get(DOG_API)
         image_url = response.json()["message"]
         title = idioma["perro"]
-
+        
+    print("Nueva petición")
     return render_template(
         "index.html",
         image_url=image_url,
