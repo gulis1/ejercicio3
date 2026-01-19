@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: ???
+metadata:
+  name: animalapp-deployment
+spec:
+  replicas: ???
+  selector:
+    matchLabels:
+      app: ???
+  template:
+    metadata:
+      labels:
+        app: ???
+    spec:
+      containers:
+      - name: ???
+        image: ???
+        ports:
+        - containerPort: ???
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: animalapp-service
+spec:
+  selector:
+    app: ???
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+      nodePort: 30800
